@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SmileCare Dental Clinic — Modern Dental Care You Can Trust</title>
+<meta name="description" content="SmileCare Dental Clinic — comprehensive dental services including general, cosmetic, restorative and orthodontic care. Book your appointment online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#home" data-page="home">
+      <span class="brand__mark">S</span>
+      <span class="brand__name"><strong>SmileCare</strong><span>Dental Clinic</span></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" data-page="home" class="active">Home</a>
+      <a href="#services" data-page="services">Services</a>
+      <a href="#doctors" data-page="doctors">Doctors</a>
+      <a href="#about" data-page="about">About</a>
+      <a href="#testimonials" data-page="testimonials">Reviews</a>
+      <a href="#faq" data-page="faq">FAQ</a>
+      <a href="#contact" data-page="contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="portal.html" class="btn btn--outline btn--sm">Patient Login</a>
+      <a href="#book" data-page="book" class="btn btn--primary btn--sm">Book Appointment</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="brand" style="margin-bottom:1rem;color:#fff">
+          <span class="brand__mark">S</span>
+          <span class="brand__name"><strong style="color:#fff">SmileCare</strong><span style="color:#94a3b8">Dental Clinic</span></span>
+        </div>
+        <p>Modern, gentle dentistry serving the community since 2015. Committed to healthy, confident smiles for every patient.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">i</a><a href="#" aria-label="X">x</a>
+        </div>
+      </div>
+      <div>
+        <h4>Clinic</h4>
+        <ul>
+          <li><a href="#services" data-page="services">Services</a></li>
+          <li><a href="#doctors" data-page="doctors">Our Doctors</a></li>
+          <li><a href="#about" data-page="about">About Us</a></li>
+          <li><a href="#testimonials" data-page="testimonials">Patient Reviews</a></li>
+          <li><a href="#faq" data-page="faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Patients</h4>
+        <ul>
+          <li><a href="#book" data-page="book">Book Appointment</a></li>
+          <li><a href="portal.html">Patient Portal</a></li>
+          <li><a href="portal.html#reports">My Reports</a></li>
+          <li><a href="portal.html#prescriptions">Prescriptions</a></li>
+          <li><a href="scan.html">Staff Check-In</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>123 Healthcare Drive</li>
+          <li>Medical District, ST 12345</li>
+          <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+          <li><a href="mailto:hello@smilecare.com">hello@smilecare.com</a></li>
+          <li>Mon–Fri 8:00–18:00 · Sat 9:00–14:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> SmileCare Dental Clinic. All rights reserved.</span>
+      <span>
+        <a href="#privacy" data-page="privacy" style="margin-right:1rem">Privacy</a>
+        <a href="#terms" data-page="terms">Terms</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-host" id="toasts"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

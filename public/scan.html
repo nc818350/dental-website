@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QR Check-In — SmileCare</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .scanner{max-width:520px;margin:2rem auto;padding:0 1rem}
+  #reader{border-radius:var(--radius-lg);overflow:hidden;background:#000;min-height:280px}
+</style>
+</head>
+<body style="background:var(--bg)">
+<div class="scanner">
+  <a class="btn btn--ghost btn--sm" href="admin.html">← Back to dashboard</a>
+  <div class="card" style="margin-top:1rem;text-align:center">
+    <h1 style="font-size:1.4rem">Scan appointment QR</h1>
+    <p class="muted">Point the camera at a patient's QR check-in code.</p>
+    <div id="reader"></div>
+    <div id="result" style="margin-top:1rem"></div>
+    <div style="margin-top:1rem">
+      <input class="form-control" id="manualToken" placeholder="…or paste token / URL">
+      <button class="btn btn--primary btn--full" id="manualBtn" style="margin-top:.5rem">Verify manually</button>
+    </div>
+  </div>
+</div>
+<div class="toast-host" id="toasts"></div>
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/scan.js"></script>
+</body>
+</html>
